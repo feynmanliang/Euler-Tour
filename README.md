@@ -8,7 +8,7 @@ traversing every edge only once) for the graph.
 There is currently no precondition checking implemented: a proper edge
 list for input is assumed.
 
-Feynman Liang
+Feynman Liang   
 <feynman.liang@gmail.com>
 
 Licensed under the MIT License
