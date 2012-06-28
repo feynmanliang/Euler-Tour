@@ -12,6 +12,8 @@ stack, the need for inserting into doubly-linked list can be eliminated.
 There is currently no precondition checking implemented: a proper edge
 list for input is assumed.
 
+---
+
 Feynman Liang   
 <feynman.liang@gmail.com>
 
