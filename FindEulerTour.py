@@ -31,8 +31,6 @@ def find_euler_tour(graph):
     current = start
     find_tour(current)
 
+    if tour[0] != tour[-1]:
+        return None
     return tour
-
-print find_euler_tour([(1,2),(2,3),(3,1)])
-print find_euler_tour([(1,3),(1,5),(3,4),(3,2),(5,2),(2,4)])
-print find_euler_tour([(0, 1), (1, 5), (1, 7), (4, 5), (4, 8), (1, 6), (3, 7), (5, 9), (2, 4), (0, 4), (2, 5), (3, 6), (8, 9)])
