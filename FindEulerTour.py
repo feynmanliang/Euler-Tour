@@ -7,14 +7,16 @@ def find_euler_tour(graph):
     numEdges = defaultdict(int)
 
     def find_tour(u):
-        for e in E:
-            if u == e[0]:
-                u,v = e
-                E.remove(e)
+        for e in range(len(E)):
+            if E[e] == 0:
+                continue
+            if u == E[e][0]:
+                u,v = E[e]
+                E[e] = 0
                 find_tour(v)
-            elif u == e[1]:
-                v,u = e
-                E.remove(e)
+            elif u == E[e][1]:
+                v,u = E[e]
+                E[e] = 0
                 find_tour(v)
         tour.insert(0,u)
 
